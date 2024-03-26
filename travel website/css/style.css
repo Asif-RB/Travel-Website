@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ############## html element styling ################### */
+
+:root {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.6rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.4em;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/* ##############################################  utility classes #######################################################*/
+
+
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.lg-heading-logo {
+    font-size: 3.5rem;
+}
+
+.md-heading {
+    font-size: 2rem;
+
+}
+
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #ffffff;
+}
+
+.text-black {
+    color: #333333;
+}
+
+.text-black-logo {
+    color: #333333;
+}
+
+.text-gray {
+    color: #3d3d3d;
+}
+
+.bg-dark {
+    background-color: #263238;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0.5em 0;
+    border-radius: 10em;
+    background-image: linear-gradient(120deg, #d562e9 0%, #d4344a 100%);
+    color: rgba(0, 0, 0, 0.932);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primery:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 0 5px 14px rgba(10, 15, 0, 0.301);
+}
+
+.btn-primery:hover {
+    background-color: #ddd;
+
+}
+
+.btn-secondry {
+    background: white;
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    color: red;
+
+}
+
+.btn-secondry:hover {
+    background-color: color #fcf3f2;
+}
+
+
+/* ################ header content styling ############### */
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p {
+    text-transform: uppercase;
+}
+
+
+.header {
+    position: relative;
+    height: 98vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../my-img/header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.navbar {
+    padding: 0.8rem;
+}
+
+
+.navbar .logo {
+    float: left;
+    letter-spacing: 0.2em;
+    margin-top: 1.1em;
+}
+
+.navbar .nav-items {
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar .nav-items .nav-item {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar .nav-items .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: #ffffff;
+
+}
+
+.navbar a {
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid white;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+
+/* ################### showcase section styling ##################### */
+
+
+.showcase {
+    background: #eeecec;
+    padding: 6rem 0;
+}
+
+.row {
+    /* border: 5px solid rgb(105, 100, 100); */
+    border-radius: 10px;
+    height: 350px;
+    margin-bottom: 6rem;
+    background: white;
+    box-shadow: 0px 0px 21px 0px #8b8a8a
+}
+
+
+
+.row1 .img-box,
+.row2 .text-box {
+    float: left;
+    width: 50%;
+    overflow-y: hidden;
+}
+
+.row2 .img-box,
+.row1 .text-box {
+    float: right;
+    width: 50%;
+
+}
+
+.row3 .img-box,
+.row4 .text-box {
+    float: left;
+    width: 50%;
+
+}
+
+.row4 .img-box,
+.row3 .text-box {
+    float: right;
+    width: 50%;
+}
+
+.row .img-box {
+    height: 100%;
+}
+
+.row .text-box {
+    padding: 2rem;
+    background: white;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+
+}
+
+.row .img-box img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* #######################        feature section      ######################## */
+
+.features {
+    padding: 5rem 0;
+}
+
+.box-wrapper {
+    border: 1px solid rgb(189, 186, 186);
+    box-shadow: 5px 5px 20px rgba(102, 102, 102, 0.575);
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.new {
+    font-family: 'Roboto Slab', serif;
+}
+
+.box {
+    width: 33.33333333%;
+    float: left;
+    padding:1rem;
+    text-align: center;
+}
+
+.box-1-left {
+    border-top-left-radius: 20px;
+}
+
+.box-3-right {
+    border-bottom-right-radius: 20px;
+}
+
+.box-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box-1,
+.box-3 {
+    background-image: linear-gradient(120deg, #2f1547 0%, #5688b9 100%);
+    color: rgb(255, 255, 255);
+}
+
+.box-2 {
+    background-image: linear-gradient(120deg, #d345ec 0%, #d4344a 100%);
+    color: rgb(255, 255, 255);
+}
+
+/*..................................................footer styling....................................................... */
+
+.footer {
+    /* border: 2px solid red; */
+    background: #121213;
+    color: #ffffff;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.footer .social-media-links a:link {
+    color: #ffffff;
+}
+
+.footer .social-media-links a:visited {
+    color: white
+}
+
+.footer .social-media-links a:hover {
+    color: #b1aeae;
+}
+
+.footer .social-media-links a {
+    display: inline-block;
+}
+
+.flex {
+    width: 20%;
+    margin: auto;
+}
+
+footer.footer .flex-item {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+div.social-media-links a i {
+    padding: 0.2rem;
+}
+
+hr {
+    border-color:#e63946;
+    width: 70%;
+    margin: 1em auto;
+}
+
+
+
+/* ....................................................About Page styling............................................... */
+
+h2.shadow {
+    text-align: center;
+    text-shadow: 2px 3px 4px rgba(119, 111, 111, 0.671);
+    font-family: 'Roboto Slab', serif;
+}
+.about-hr{
+    border: 2px solid #e63946;
+}
+div.left{
+    float: left;
+    width: 50%;
+}
+div.left ul{
+    line-height:5rem;
+}
+div.right{
+    float: right;
+    width: 50%;
+    border-left: 1px solid #e63946;
+}
+div
+.wrapper-box{
+    margin-top: 2rem;
+    text-align: center;
+}
+.wrapper-box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section.about ul li::before{
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+/* ..........................................About Count Part.................................................. */
+div.count-item{
+    margin:auto;
+}
+.count-item span{
+   color: #e63946;
+}
+.count-item p{
+    font-weight: bolder;
+    color: rgb(94, 94, 94);
+}
+
+div.contact{
+    width: 30%;
+    margin: 3rem auto;
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #131212;
+    background-image: linear-gradient(120deg, #d345ec 0%, #d4344a 100%);
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    font-weight:500; 
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .glow-button:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0 5px 12px rgb(101, 100, 102);
+  }
+
+
+/* .................................................contact page part-1 design.................................................. */
+body.contact-bg{
+    background-image: linear-gradient(120deg, #90d462 0%, #96e6a1 100%);
+
+}
+
+h2.heading-style{
+    color:black;
+    margin-top:2rem;
+    font-family: 'Roboto Slab', serif;
+}
+div.contact-part-1{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+div.contact-part-1 div.item{
+    background-color: white;
+    border-radius: 1rem;
+    outline: none;
+    text-align: center;
+    padding: 5rem 0rem ;
+    margin: 0.5rem;
+    width: 24.24%;
+}
+div.contact-part-1 div.item i.item-font{
+    font-size:3rem;
+    color:#659ed8;
+}
+/* .........................................contact-page-part-2 ........................................................*/
+div.contact-part-2{
+    position: relative;
+    background-color: #5688b9;
+}
+div.form-style{
+    background-color:#659ed8;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%);
+    width: 50%;
+    height: 90vh;
+    padding:2rem;
+    border-radius: 10px;
+   
+}
+div.form-style h2{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+div input, textarea{
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+    
+}
+
+.form-button{
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size:2rem;
+    letter-spacing:0.2em; 
+    color:black;
+    background-color:#659ed8;
+    padding:0.5rem;
+    margin-top: 6rem;
+    border:1px solid white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.button-design:hover{
+    color: rgb(247, 240, 240);
+    box-shadow: 0 5px 14px rgb(102, 101, 102);
+}
+/*................................................. Media Quaries................................................ */
+@media (max-width:530px){
+    :root{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    div.row{ 
+        width: 100%;
+        height: auto;
+    }
+   .row .img-box, 
+   .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .button{
+        font-size:1.8rem;
+    }
+    div.form-style h2{
+        font-size: 2.5rem;
+    }
+    div.left, div.right{
+        float: none;
+        width: 100%;
+        border: none;
+    }
+    div.right{
+        margin-top: 2rem;
+    }
+    div.left ul{
+        line-height:2.5rem;
+    }
+    div
+    .wrapper-box{
+        margin-top: 2rem;
+        text-align: left;
+    }
+    div.count-part div.count-item{
+        width: 33.3333333%;
+        float: left;
+        text-align: center;
+    }
+    div.count-part::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+@media (min-width:531px) and (max-width:768px){
+    :root{
+        font-size: 50%;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    div.row{ 
+        width: 100%;
+        height: auto;
+    }
+   .row .img-box, 
+   .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .button{
+        font-size:1.8rem;
+    }
+    div.form-style h2{
+        font-size: 2.5rem;
+    }
+    div.left, div.right{
+        float: none;
+        width: 100%;
+        border: none;
+    }
+    div.right{
+        margin-top: 2rem;
+    }
+    div.left ul{
+        line-height:2.5rem;
+    }
+    div
+    .wrapper-box{
+        margin-top: 2rem;
+        text-align: left;
+    }
+    div.count-part div.count-item{
+        width: 33.3333333%;
+        float: left;
+        text-align: center;
+    }
+    div.count-part::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+@media (min-width:769px) and (max-width:1200px){
+    :root{
+        font-size: 56.25%;
+    }
+}
+@media (orientation: landscape) and (max-height: 530px){
+    .header{
+        height:95vmax
+    }
+    div.form-style{
+        height:50vmax
+    }
+}
